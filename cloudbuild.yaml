@@ -1,0 +1,22 @@
+steps:
+- name: 'gcr.io/cloud-builders/docker'
+  args:
+  - 'build'
+  - '-t'
+  - 'gcr.io/api-project-112140288246/function-test-1'
+  - '.'
+- name: 'gcr.io/cloud-builders/gcloud'
+  args:
+  - 'functions'
+  - 'deploy'
+  - 'function-test-1'
+  - '--runtime'
+  - 'python312'
+  - '--trigger-http'
+  - '--region'
+  - 'europe-southwest1'
+  - '--allow-unauthenticated'
+  - '--set-env-vars'
+  - 'VAR1=value1,VAR2=value2'
+  - '--service-account'
+  - 'my-service-account@my-project.iam.gserviceaccount.com'
