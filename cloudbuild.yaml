@@ -13,8 +13,6 @@ steps:
   - '--runtime'
   - 'python312'
   - '--trigger-http'
-  - '--region'
-  - 'europe-west2'
   - '--allow-unauthenticated'
   - '--set-env-vars'
   - 'VAR1=value1,VAR2=value2'
