@@ -20,3 +20,6 @@ steps:
   - 'VAR1=value1,VAR2=value2'
   - '--service-account'
   - 'my-service-account@my-project.iam.gserviceaccount.com'
+
+options:
+  logs_bucket: 'nch-cloudbuild-log-bucket'
