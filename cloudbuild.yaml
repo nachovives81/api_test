@@ -22,4 +22,4 @@ steps:
   - 'my-service-account@my-project.iam.gserviceaccount.com'
 
 options:
-  logs_bucket: 'nch-cloudbuild-log-bucket'
+  default_logs_bucket_behavior: REGIONAL_USER_OWNED_BUCKET
