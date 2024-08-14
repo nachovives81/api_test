@@ -14,7 +14,7 @@ steps:
   - 'python312'
   - '--trigger-http'
   - '--region'
-  - 'europe-southwest1'
+  - 'europe-west2'
   - '--allow-unauthenticated'
   - '--set-env-vars'
   - 'VAR1=value1,VAR2=value2'
