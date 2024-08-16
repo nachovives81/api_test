@@ -20,4 +20,4 @@ def hello_http(request):
         name = request_args['name']
     else:
         name = 'World'
-    return 'Hola desde github {}!'.format(name)
+    return 'Hola desde github: {}!'.format(name)
