@@ -17,7 +17,7 @@ steps:
   - '--set-env-vars'
   - 'VAR1=value1,VAR2=value2'
   - '--service-account'
-  - 'cloudbuild@api-project-112140288246.iam.gserviceaccount.com'
+  - 'id-cloudbuild-service-account@api-project-112140288246.iam.gserviceaccount.com'
 
 options:
   default_logs_bucket_behavior: REGIONAL_USER_OWNED_BUCKET
